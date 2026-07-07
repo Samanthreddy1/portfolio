@@ -1,178 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal-portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0a21e19e4e.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Morapally Samanth Reddy - Junior AI Engineer focused on ML, Deep Learning, IoT and Software Engineering." />
+  <title>Samanth Reddy | Junior AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/mylogo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-light fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Software Engineer</p> 
-            <h1>Hi, I'm <span>Morapally </span><br>Samanth Reddy from India</h1>
-        </div>
-    </div>
-</div>
+  <div class="noise"></div>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand" aria-label="Home">
+        <span class="brand-logo">SR</span>
+        <span class="brand-text">Samanth Reddy</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="images/mycv.pdf" download>Download CV</a>
+      </div>
+    </nav>
+  </header>
 
-<!-- ---------------about------------ -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/meuser.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <p class="about-statement">Intend to build a career with leading corporate of hi-tech environment with committed & dedicated people, which will help me to explore myself fully and realize my potential. Willing to work as a key player in challenging and creative environment.A talented Software Engineer aspiring to gain a full-time position in a reputed company. A highly motivated and hardworking individual skilled in Java, SQL,HTML,CSS and Python.
-                    Seeking a position to utilize the gained skills and experience to positively contribute to the company. With a strong focus on problem-solving and a meticulous approach to documentation and organization, I am prepared to make meaningful contributions from day one and grow alongside the organization.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span>Python</span><br>Intermediate level</li>
-                        <li><span>Java</span><br>Intermediate level</li>
-                        <li><span>Html</span><br>Advanced level</li>
-                        <li><span>Css</span><br>Intermedite level</li>
-                        <li><span>Ms office</span><br>Intermedite level</li>
-                        <li><span>Git and Github</span><br>Advanced level</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>Leetcode</span><br>Solved 200+ problems from leetode</li> 
-                        <li><span>Protfolio</span><br>Build an Own persoal-Portfolio website</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>2019-2023</span><br>B.Tech from SreeDattha Institutions of Engineering and Science</li>
-                        <li><span>2017-2019</span><br>Indermediate from Alphores junior collage</li>
-                        <li><span>2014-2017</span><br>SSC from Siddartha High School English Medium</li>
-                     
-                    </ul>
-                </div>  
-            </div>
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="pill"><span></span> Open to Junior AI Engineer roles</p>
+          <h1>Junior AI Engineer building practical <em>ML, Deep Learning & IoT</em> systems.</h1>
+          <p class="hero-subtitle">
+            MSc Advanced Computer Science student at Middlesex University with hands-on projects in computer vision,
+            predictive modelling, water quality IoT monitoring, game logic design, and frontend portfolio development.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+          <div class="metrics">
+            <div><strong>98%</strong><span>Image classification accuracy</span></div>
+            <div><strong>5+</strong><span>Technical projects</span></div>
+            <div><strong>200+</strong><span>LeetCode problems</span></div>
+          </div>
         </div>
-    </div>
-</div>
-<!-- ---------------services---------- -->s
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Front End Developer</h2>
-                <p>Professional, responsible for crafting the visual and interactive components of websites and web applications.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>python</h2>
-                <p>Capable of handling and resolving the issues in codes and using the modren solutions for problem-solving.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-book"></i>
-                <h2>Ms Office</h2>
-                <p>Queries related to msoffice</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ------------conatct------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>morapally.8177@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i>8885722764</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="images/mycv.pdf" download class="btn btn2">Download Cv</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright@Samanth. Made with <i class="fa-solid fa-heart"></i> </i> by  Morapally</p>
-    </div>
-</div>
-<script>
-    var tablinks = documnet.getElementsByClassName("tab-links")
-    var tabcontents = documnet.getElementsByClassName("tab-contents")
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+        <aside class="hero-visual reveal delay-1" aria-label="Profile card">
+          <div class="orbit one"></div>
+          <div class="orbit two"></div>
+          <div class="profile-card">
+            <div class="profile-photo"></div>
+            <div class="profile-info">
+              <h2>Morapally Samanth Reddy</h2>
+              <p>AI Engineer • Python • ML • Computer Vision</p>
+              <div class="mini-stack">
+                <span>Python</span><span>SQL</span><span>Java</span><span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-    }
-</script>
-<script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2Z4I82SJjUVjwTmrcEYe34v6dH5t9i3DawD82lZWEO7pyOBSgjo_Pt_hO3rXBlawA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>About</p>
+          <h2>AI-focused software engineer profile</h2>
+        </div>
+        <div class="about-layout">
+          <div class="glass-card reveal">
+            <p>
+              I am a Junior AI Engineer candidate with a strong foundation in programming, data structures,
+              machine learning, deep learning, and software design. My projects cover real-world problem areas:
+              agricultural crop recognition, loan eligibility prediction, house price valuation, IoT water monitoring,
+              and object-oriented game system design.
+            </p>
+            <p>
+              I enjoy converting academic and practical problems into working systems using clean code,
+              structured data preprocessing, model evaluation, and user-friendly interfaces.
+            </p>
+          </div>
+          <div class="focus-list reveal delay-1">
+            <div><span>01</span><strong>Machine Learning</strong><p>Classification, regression, preprocessing, evaluation.</p></div>
+            <div><span>02</span><strong>Deep Learning</strong><p>Computer vision, CNN architectures, model comparison.</p></div>
+            <div><span>03</span><strong>Software Design</strong><p>OOP, UML, responsive UI, GitHub project presentation.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>Skills</p>
+          <h2>Technical toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><h3>Languages</h3><p>Python, Java, C, C++, SQL</p></div>
+          <div class="skill-card reveal delay-1"><h3>AI / ML</h3><p>Machine Learning, Deep Learning, Computer Vision, DSA</p></div>
+          <div class="skill-card reveal delay-2"><h3>Web</h3><p>HTML, CSS, JavaScript, Responsive Design</p></div>
+          <div class="skill-card reveal delay-3"><h3>Tools</h3><p>Git, GitHub, UML, IoT Concepts, MS Office</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>Projects</p>
+          <h2>Featured work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-header"><span>Deep Learning</span><strong>98% Accuracy</strong></div>
+            <h3>Crop Image Classification using Deep Learning</h3>
+            <p>Compared CNN-based architectures for agricultural crop recognition using preprocessing, augmentation, SMOTE balancing, and performance evaluation.</p>
+            <div class="tags"><span>Python</span><span>CNN</span><span>MobileNet</span><span>Computer Vision</span></div>
+            <a href="#" class="project-link">Add GitHub Link →</a>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-header"><span>Machine Learning</span><strong>Classification</strong></div>
+            <h3>Loan Prediction System</h3>
+            <p>Built a Random Forest based model to predict loan approval eligibility using customer and financial features.</p>
+            <div class="tags"><span>Random Forest</span><span>Python</span><span>Data Cleaning</span></div>
+            <a href="#" class="project-link">Add GitHub Link →</a>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-header"><span>Predictive Analytics</span><strong>Regression</strong></div>
+            <h3>House Price Prediction</h3>
+            <p>Developed regression models using housing features such as location, area, bathrooms and property type to estimate price.</p>
+            <div class="tags"><span>Regression</span><span>SVR</span><span>Feature Engineering</span></div>
+            <a href="#" class="project-link">Add GitHub Link →</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header"><span>IoT</span><strong>Real-time Monitoring</strong></div>
+            <h3>IoT Water Quality Monitoring System</h3>
+            <p>Designed a sensor-driven rural water monitoring architecture with ESP32/Arduino, cloud dashboards, alerts, and scalable deployment thinking.</p>
+            <div class="tags"><span>ESP32</span><span>Sensors</span><span>Cloud</span><span>IoT</span></div>
+            <a href="#" class="project-link">Add GitHub Link →</a>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-header"><span>Software Design</span><strong>OOP</strong></div>
+            <h3>Limbo Card Game</h3>
+            <p>Designed an object-oriented Python card game with UML class/activity diagrams, scoring logic, turn validation and planned AI opponent.</p>
+            <div class="tags"><span>Python</span><span>UML</span><span>OOP</span></div>
+            <a href="#" class="project-link">Add GitHub Link →</a>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-header"><span>Frontend</span><strong>Portfolio</strong></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>Built a responsive portfolio using HTML, CSS and JavaScript to present skills, projects and contact details professionally.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="#" class="project-link">Add GitHub Link →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-title reveal">
+          <p>Education</p>
+          <h2>Academic background</h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item"><span>2024 - 2026</span><div><h3>MSc Advanced Computer Science</h3><p>Middlesex University</p></div></div>
+          <div class="timeline-item"><span>2019 - 2023</span><div><h3>B.Tech Computer Science & Engineering</h3><p>Sree Dattha Institute of Engineering and Science</p></div></div>
+          <div class="timeline-item"><span>Practice</span><div><h3>LeetCode + GitHub Projects</h3><p>200+ coding problems solved and multiple applied software/AI projects completed.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <div class="section-title left">
+            <p>Contact</p>
+            <h2>Let’s build something intelligent.</h2>
+          </div>
+          <p class="contact-copy">Available for junior AI engineer, ML, data, and software engineering opportunities.</p>
+          <div class="contact-links">
+            <a href="mailto:morapally.8177@gmail.com">morapally.8177@gmail.com</a>
+            <a href="tel:+918885722764">+91 8885722764</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+        <form class="contact-form reveal delay-1">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Morapally Samanth Reddy. Portfolio built for AI engineering roles.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => navLinks.classList.toggle('show'));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
-    
 </body>
 </html>
